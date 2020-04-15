@@ -1,0 +1,91 @@
+@import "nav-bar";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+}
+
+/* Removing default scroll bar*/
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: rgb(41, 41, 47);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(125, 126, 126);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 192, 255);
+}
+
+/* ------------------------------- */
+
+/* Custom scroll bar */
+
+/* -------------------- */
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.wrapper .nav-bar {
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(30, 30, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .main-content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.main-content section {
+  scroll-snap-align: center;
+}
+
+#home-page {
+  height: 100vh;
+  background-color: rgb(41, 41, 47);
+}
+
+#about-page {
+  height: 100vh;
+  background-color: rgb(41, 41, 47);
+}
+
+#skills-page {
+  height: 100vh;
+  background-color: rgb(41, 41, 47);
+}
+
+#projects-page {
+  height: 100vh;
+  background-color: rgb(41, 41, 47);
+}
+
+#contact-page {
+  height: 100vh;
+  background-color: rgb(41, 41, 47);
+}
