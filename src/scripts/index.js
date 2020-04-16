@@ -2,6 +2,7 @@
 import "../styles/main.scss";
 
 import "regenerator-runtime/runtime";
+import { clock } from "./clock";
 
 const $ = require("jquery");
 
@@ -46,3 +47,5 @@ $(".nav-links").click(function () {
 
   this.classList.add("active");
 });
+
+clock();
