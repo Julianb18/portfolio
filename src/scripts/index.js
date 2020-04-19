@@ -40,6 +40,8 @@ clock();
 //   });
 // });
 
+// Navigation onclick highlight
+
 $(".nav-links").click(function () {
   let navItems = $(".nav-links");
 
@@ -48,6 +50,18 @@ $(".nav-links").click(function () {
   }
 
   this.classList.add("active");
+});
+
+// Contact Form onclick highlight
+
+$(".contact-wrapper .inputBox").click(function () {
+  let contactLabel = $(".contact-wrapper .inputBox");
+
+  for (let i = 0; i < contactLabel.length; i++) {
+    contactLabel[i].classList.remove("selected");
+  }
+
+  this.classList.add("selected");
 });
 
 // Smooth scroll
