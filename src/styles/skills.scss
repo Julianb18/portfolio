@@ -68,7 +68,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-
   z-index: 100;
 }
 
@@ -146,11 +145,11 @@
   stroke: $primary-color;
 }
 .skill-cards .set1 .card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 88) / 100);
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
   stroke: rgb(255, 252, 61);
 }
 .skill-cards .set1 .card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 76) / 100);
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
   stroke: rgb(255, 42, 42);
 }
 
