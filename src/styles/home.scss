@@ -1,7 +1,11 @@
 #home-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+
+.typing-animate {
+  position: absolute;
+  top: 80px;
+  left: 50px;
 }
 
 #home-page .myName {
